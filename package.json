@@ -1,0 +1,17 @@
+{
+  "name": "throttle-obj-stream",
+  "version": "1.0.0",
+  "description": "an object stream that uses [lodash.throttle](https://lodash.com/docs/4.17.10#throttle) to reduce the number of events passing through the stream.",
+  "main": "index.js",
+  "dependencies": {
+    "lodash.throttle": "^4.1.1",
+    "tape": "^4.9.1",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kumavis",
+  "license": "ISC"
+}
