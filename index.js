@@ -6,7 +6,7 @@ module.exports = createThrottleObjStream
 function createThrottleObjStream(wait = 0, opts = {}) {
   const throttledSubmitChunk = throttle(submitChunk, wait, opts)
 
-  return through((chunk, _, cb) => {
+  return through(function (chunk, _, cb) {
     throttledSubmitChunk.call(this, chunk)
     cb()
   })
